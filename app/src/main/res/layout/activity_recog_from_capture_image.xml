@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.recog.LicenseRecog.RecogFromCaptureImage">
+
+    <RelativeLayout
+        android:id="@+id/layImageGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layButtonGroup"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/CarImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_marginBottom="160dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@color/background" />
+
+        <ImageView
+            android:id="@+id/PlateImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:srcCompat="@color/background" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layButtonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorCounterBackground"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/LicenseRecognitionStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/no_btn_broder"
+            android:text="License Recognition Start"
+            android:textColor="@color/background"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>
